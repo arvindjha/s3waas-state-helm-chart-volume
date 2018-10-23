@@ -166,14 +166,14 @@ questions:
 #   description: "State Application S3 Uploads Secret"
 #   group: "Object Storage"
 - variable: applicationS3UploadsEndpoint
-  default: "https://s3waasnic.gov.in"
+  default: "http://s3waasnic.gov.in"
   label: S3 URL
   type: string
   required: true
   description: "State Application S3 URL endpoint"
   group: "Object Storage"
 - variable: applicationS3UploadsCDNURL
-  default: "https://s3waasnic.gov.in"
+  default: "http://s3waasnic.gov.in"
   label: S3 CDN
   type: string
   required: true
