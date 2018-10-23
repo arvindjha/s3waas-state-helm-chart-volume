@@ -138,42 +138,28 @@ questions:
     label: Default StorageClass for S3WaaS State Application
 
 - variable: applicationS3UploadsBucket
-  default: "master"
+  default: ""
   label: S3 Bucket
   type: string
   required: true
   description: "State Application Object Storage Bucket name"
   group: "Object Storage"
 - variable: applicationS3UploadsRegion
-  default: "custom"
+  default: "us-east-1"
   label: S3 Region
   type: string
   required: true
   description: "State Application S3 Uploads bucket region"
   group: "Object Storage"
-# - variable: applicationS3UploadsKey
-#   default: ""
-#   label: S3 Uploads Key
-#   type: string
-#   required: true
-#   description: "State Application S3 Uploads Key"
-#   group: "Object Storage"
-# - variable: applicationS3UploadsSecret
-#   default: ""
-#   label: S3 Uploads Secret
-#   type: string
-#   required: true
-#   description: "State Application S3 Uploads Secret"
-#   group: "Object Storage"
 - variable: applicationS3UploadsEndpoint
-  default: "https://s3waasnic.gov.in"
+  default: "http://10.43.109.3:7480"
   label: S3 URL
   type: string
   required: true
   description: "State Application S3 URL endpoint"
   group: "Object Storage"
 - variable: applicationS3UploadsCDNURL
-  default: "https://s3waasnic.gov.in"
+  default: "http://10.43.109.3:7480"
   label: S3 CDN
   type: string
   required: true
