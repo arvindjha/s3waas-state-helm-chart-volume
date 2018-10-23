@@ -28,7 +28,7 @@ applicationDBUsername: root
 applicationS3UploadsBucket: master
 applicationS3UploadsRegion: us-east-1
 applicationS3UploadsEndpoint: http://s3waasnic.gov.in
-# applicationS3UploadsBucketURL: http://s3waasnic.gov.in/master
+applicationS3UploadsBucketURL: http://s3waasnic.gov.in/
 applicationS3UploadsCDNURL: http://s3waasnic.gov.in
 
 applicationLive: 0
