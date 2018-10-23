@@ -9,7 +9,7 @@ image:
   tag: 2.0.0
   pullPolicy: IfNotPresent
 
-applicationTag: 1.0.0
+applicationTag: 2.0.0
 applicationTitle: "State Website"
 applicationStagingURL: ""
 applicationAlias: ""
