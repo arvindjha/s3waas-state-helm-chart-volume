@@ -138,7 +138,7 @@ questions:
     label: Default StorageClass for S3WaaS State Application
 
 - variable: applicationS3UploadsBucket
-  default: Chart.Name
+  default: ""
   label: S3 Bucket
   type: string
   required: true
