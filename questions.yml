@@ -86,8 +86,8 @@ questions:
   description: "State Application language locale as per I18n standards"
   group: "State Application Settings"
 - variable: applicationThemeName
-  default: "State-theme-2"
-  label: Theme Code
+  default: "SDO Theme"
+  label: Theme Name
   type: string
   required: true
   description: "State Application theme code, If you wan to choose theme 1 use State-theme-1"
