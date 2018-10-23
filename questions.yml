@@ -10,12 +10,12 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "ranjan653/s3waas-state-app"
+    default: "rancher-server:5000/s3waas-state-app"
     description: "S3WaaS State Application image name"
     type: string
     label: S3WaaS State Application image name
   - variable: image.tag
-    default: "1.0.0"
+    default: "2.0.0"
     description: "S3WaaS State Application image tag"
     type: string
     label: S3WaaS State Application image tag
