@@ -15,7 +15,7 @@ questions:
     type: string
     label: S3WaaS State Application image name
   - variable: image.tag
-    default: "1.0.0"
+    default: "2.0.0"
     description: "S3WaaS State Application image tag"
     type: string
     label: S3WaaS State Application image tag
