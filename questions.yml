@@ -10,7 +10,7 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "ranjan653/s3waas-state-app"
+    default: "registry.s3waas.gov.in:5000/s3waas-state-docker-rancher"
     description: "S3WaaS State Application image name"
     type: string
     label: S3WaaS State Application image name
@@ -20,7 +20,7 @@ questions:
     type: string
     label: S3WaaS State Application image tag
   - variable: mariadb.image.repository
-    default: "bitnami/mariadb"
+    default: "registry.s3waas.gov.in:5000/bitnami/mariadb"
     description: "MariaDB image name"
     type: string
     label: MariaDB Image Name
