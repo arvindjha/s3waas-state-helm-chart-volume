@@ -11,7 +11,7 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "registry.s3waas.gov.in:5000/bitnami/mariadb"
+    default: "bitnami/mariadb"
     description: "Docker image name"
     type: string
     label: MariaDB Image Name
