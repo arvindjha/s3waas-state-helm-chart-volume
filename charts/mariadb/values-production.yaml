@@ -2,7 +2,6 @@
 ## ref: https://hub.docker.com/r/bitnami/mariadb/tags/
 ##
 image:
-  # registry: docker.io
   repository: registry.s3waas.gov.in:5000/bitnami/mariadb
   tag: 10.1.36-debian-9
   ## Specify a imagePullPolicy
