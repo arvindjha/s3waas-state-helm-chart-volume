@@ -1,4 +1,4 @@
-name: wordpress
+name: s3waas-state-helm-chart
 version: 1.0.0
 appVersion: 1.0.0
 description: Web publishing platform for building state websites.
