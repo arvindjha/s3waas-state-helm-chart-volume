@@ -5,7 +5,8 @@ image:
   # registry: docker.io
   # repository: ranjan653/s3waas-state-app
   # tag: 2.0.0
-  repository: registry.s3waas.gov.in:5000/s3waas-state-docker-rancher
+  #repository: registry.s3waas.gov.in:5000/s3waas-state-docker-rancher
+  repository: rancher-server:5000/s3waas-state-app
   tag: 2.0.0
   pullPolicy: IfNotPresent
 
