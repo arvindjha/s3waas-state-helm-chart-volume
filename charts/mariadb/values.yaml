@@ -34,7 +34,7 @@ rootUser:
   ## MariaDB admin password
   ## ref: https://github.com/bitnami/bitnami-docker-mariadb#setting-the-root-password-on-first-run
   ##
-  password: redhat
+  password: 
   ## Use existing secret (ignores root, db and replication passwords)
   # existingSecret:
   ##
@@ -60,7 +60,7 @@ db:
 replication:
   ## Enable replication. This enables the creation of replicas of MariaDB. If false, only a
   ## master deployment would be created
-  enabled: true
+  enabled: false
   ##
   ## MariaDB replication user
   ## ref: https://github.com/bitnami/bitnami-docker-mariadb#setting-up-a-replication-cluster
@@ -159,27 +159,27 @@ master:
   ## Configure master resource requests and limits
   ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
   ##
-  resources: {}
-  livenessProbe:
-    enabled: true
+  #resources: {}
+  #livenessProbe:
+  #  enabled: true
     ##
     ## Initializing the database could take some time
-    initialDelaySeconds: 120
+  #  initialDelaySeconds: 120
     ##
     ## Default Kubernetes values
-    periodSeconds: 10
-    timeoutSeconds: 1
-    successThreshold: 1
-    failureThreshold: 3
-  readinessProbe:
-    enabled: true
-    initialDelaySeconds: 30
+  #  periodSeconds: 10
+  #  timeoutSeconds: 1
+  #  successThreshold: 1
+  #  failureThreshold: 3
+  #readinessProbe:
+  #  enabled: true
+  #  initialDelaySeconds: 30
     ##
     ## Default Kubernetes values
-    periodSeconds: 10
-    timeoutSeconds: 1
-    successThreshold: 1
-    failureThreshold: 3
+  #  periodSeconds: 10
+  #  timeoutSeconds: 1
+  #  successThreshold: 1
+  #  failureThreshold: 3
 
 slave:
   replicas: 2
