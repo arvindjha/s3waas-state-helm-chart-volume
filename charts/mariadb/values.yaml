@@ -34,7 +34,7 @@ rootUser:
   ## MariaDB admin password
   ## ref: https://github.com/bitnami/bitnami-docker-mariadb#setting-the-root-password-on-first-run
   ##
-  password:
+  password: redhat
   ## Use existing secret (ignores root, db and replication passwords)
   # existingSecret:
   ##
