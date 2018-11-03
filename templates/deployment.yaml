@@ -178,13 +178,12 @@ spec:
              path: /var/www/html
              type: DirectoryOrCreate
         name: wordpress-data
-      #     type: ""
-      {{- if .Values.persistence.enabled }}
-        persistentVolumeClaim:
-          claimName: {{ .Values.persistence.existingClaim | default (include "fullname" .) }}
-      {{- else }}
-        emptyDir: {}
-      {{ end }}
+#      {{- if .Values.persistence.enabled }}
+#        persistentVolumeClaim:
+#          claimName: {{ .Values.persistence.existingClaim | default (include "fullname" .) }}
+#      {{- else }}
+#        emptyDir: {}
+#      {{ end }}
     {{- if .Values.nodeSelector }}
       nodeSelector:
 {{ toYaml .Values.nodeSelector | indent 8 }}
