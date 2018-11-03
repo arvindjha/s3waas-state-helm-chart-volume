@@ -176,7 +176,7 @@ spec:
       volumes:
         - hostPath:           
              path: /var/www/html
-             typr: DirectoryOrCreate
+             type: DirectoryOrCreate
           name: wordpress-data
       #     type: ""
       {{- if .Values.persistence.enabled }}
