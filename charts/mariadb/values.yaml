@@ -3,7 +3,9 @@
 ##
 image:
   #registry: registry.s3waas.gov.in:5000
-  registry: docker.io
+  #registry: docker.io
+  #repository: bitnami/mariadb
+  registry: rancher-server:5000
   repository: bitnami/mariadb
   tag: 10.1.36-debian-9
   ## Specify a imagePullPolicy
