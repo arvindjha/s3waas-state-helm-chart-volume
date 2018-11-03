@@ -166,7 +166,7 @@ master:
     enabled: true
     ##
     ## Initializing the database could take some time
-  #  initialDelaySeconds: 120
+    initialDelaySeconds: 120
     ##
     ## Default Kubernetes values
     periodSeconds: 10
@@ -184,7 +184,7 @@ master:
     failureThreshold: 3
 
 slave:
-  replicas: 2
+  replicas: 1
 
   ## Mariadb Slave additional pod annotations
   ## ref: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
