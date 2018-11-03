@@ -20,7 +20,7 @@ questions:
     type: string
     label: S3WaaS State Application image tag
   - variable: mariadb.image.repository
-    default: "rancher-server:5000/bitnami/mariadb"
+    default: "bitnami/mariadb"
     description: "MariaDB image name"
     type: string
     label: MariaDB Image Name
