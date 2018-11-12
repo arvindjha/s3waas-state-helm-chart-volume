@@ -163,7 +163,7 @@ spec:
         volumeMounts:
         - mountPath: /var/www/html
           name: wordpress-data
-          readOnly: true
+          readOnly: false
         #   subPath: apache
         # - mountPath: /bitnami/wordpress
         #   name: wordpress-data
