@@ -90,7 +90,8 @@ master:
   ##
   affinity: {}
   
-  ##nodeSelector: "node=arvind"
+  nodeSelector: 
+     node: arvind
 
   ## Kept for backwards compatibility. You can now disable it by removing it.
   ## if you wish to set it through master.affinity.podAntiAffinity instead.
@@ -200,7 +201,8 @@ slave:
   affinity: {}
   
   
-  ##nodeSelector: "node=arvind"
+  nodeSelector: 
+     node: arvind
 
   ## Kept for backwards compatibility. You can now disable it by removing it.
   ## if you wish to set it through slave.affinity.podAntiAffinity instead.
