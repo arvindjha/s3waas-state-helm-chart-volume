@@ -95,7 +95,7 @@ master:
   ## Kept for backwards compatibility. You can now disable it by removing it.
   ## if you wish to set it through master.affinity.podAntiAffinity instead.
   ##
-  antiAffinity: arvind
+  antiAffinity: soft
 
   ## Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
