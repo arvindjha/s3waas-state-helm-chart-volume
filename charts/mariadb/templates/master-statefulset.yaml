@@ -63,7 +63,14 @@ spec:
                   release: "{{ .Release.Name }}"
       {{- else}}
       {{- with .Values.master.affinity }}
-      affinity:           
+      affinity:
+          nodeAffinity:
+                requiredDuringSchedulingIgnoredDuringExecution:
+                  nodeSelectorTerms:
+                    matchExpressions:
+                      key: node
+                      operator: In
+                      values: arvind
 {{ toYaml . | indent 8 }}
       {{- end }}
       {{- end }}
