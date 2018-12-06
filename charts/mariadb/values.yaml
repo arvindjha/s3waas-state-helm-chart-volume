@@ -89,6 +89,9 @@ master:
   ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
   ##
   affinity: {}
+  
+  nodeSelector: 
+   node=10.247.39.8
 
   ## Kept for backwards compatibility. You can now disable it by removing it.
   ## if you wish to set it through master.affinity.podAntiAffinity instead.
@@ -196,6 +199,10 @@ slave:
   ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
   ##
   affinity: {}
+  
+  
+  nodeSelector: 
+   node=10.247.39.8
 
   ## Kept for backwards compatibility. You can now disable it by removing it.
   ## if you wish to set it through slave.affinity.podAntiAffinity instead.
