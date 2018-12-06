@@ -234,7 +234,9 @@ resources:
 ## Node labels for pod assignment
 ## Ref: https://kubernetes.io/docs/user-guide/node-selection/
 ##
-nodeSelector: {}
+#nodeSelector: {}
+nodeSelector: 
+   node=10.247.39.8
 
 ## Tolerations for pod assignment
 ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
