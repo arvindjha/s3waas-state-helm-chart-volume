@@ -66,13 +66,6 @@ spec:
       affinity:
 {{ toYaml . | indent 8 }}
       {{- end }}
-            nodeAffinity:
-                requiredDuringSchedulingIgnoredDuringExecution:
-                  nodeSelectorTerms:
-                    matchExpressions:
-                      key: node
-                      operator: In
-                      values: arvind
       {{- end }}
       {{- with .Values.master.tolerations }}
       tolerations:
@@ -226,7 +219,7 @@ spec:
         - name: "data"
           emptyDir: {}
 {{- end }}
-    {{- if .Values.nodeSelector }}
-      nodeSelector:
-{{ toYaml .Values.nodeSelector | indent 8 }}
+    {{- if .Values.affinity }}
+      affinity:
+{{ toYaml .Values.affinity | indent 8 }}
       {{- end -}} 
