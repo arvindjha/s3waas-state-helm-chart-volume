@@ -62,7 +62,7 @@ questions:
   group: "Master Settings"
   subquestions:
   - variable: master.persistence.size
-    default: "8Gi"
+    default: "2Gi"
     description: "MariaDB Persistent Volume Size"
     type: string
     label: MariaDB Volume Size
