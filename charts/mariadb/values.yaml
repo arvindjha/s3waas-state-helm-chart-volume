@@ -90,8 +90,7 @@ master:
   ##
   affinity: {}
   
-  nodeSelector: 
-   node=10.247.39.8
+  nodeSelector: {node=10.247.39.8}
 
   ## Kept for backwards compatibility. You can now disable it by removing it.
   ## if you wish to set it through master.affinity.podAntiAffinity instead.
@@ -201,8 +200,7 @@ slave:
   affinity: {}
   
   
-  nodeSelector: 
-   node=10.247.39.8
+  nodeSelector: {node=10.247.39.8}
 
   ## Kept for backwards compatibility. You can now disable it by removing it.
   ## if you wish to set it through slave.affinity.podAntiAffinity instead.
