@@ -90,9 +90,6 @@ master:
   ##
   affinity: {}
   
-  nodeSelector: 
-     node: arvind
-
   ## Kept for backwards compatibility. You can now disable it by removing it.
   ## if you wish to set it through master.affinity.podAntiAffinity instead.
   ##
@@ -160,10 +157,13 @@ master:
     port=3306
     socket=/opt/bitnami/mariadb/tmp/mysql.sock
     pid-file=/opt/bitnami/mariadb/tmp/mysqld.pid
-
+  
+  
   ## Configure master resource requests and limits
   ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
   ##
+  nodeSelector: 
+       node: arvind
   resources: {}
   livenessProbe:
     enabled: true
@@ -259,6 +259,8 @@ slave:
   ## Configure slave resource requests and limits
   ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
   ##
+  nodeSelector: 
+       node: arvind
   resources: {}
   livenessProbe:
     enabled: true
