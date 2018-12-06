@@ -93,7 +93,7 @@ master:
   ## Kept for backwards compatibility. You can now disable it by removing it.
   ## if you wish to set it through master.affinity.podAntiAffinity instead.
   ##
-  antiAffinity: soft
+  ##antiAffinity: soft
 
   ## Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
@@ -127,7 +127,7 @@ master:
     - ReadWriteOnce
     ## Persistent Volume size
     ##
-    size: 8Gi
+    size: 2Gi
     ##
 
   ## Configure MySQL with a custom my.cnf file
@@ -207,7 +207,7 @@ slave:
   ## Kept for backwards compatibility. You can now disable it by removing it.
   ## if you wish to set it through slave.affinity.podAntiAffinity instead.
   ##
-  antiAffinity: soft
+  ##antiAffinity: soft
 
   ## Tolerations for pod assignment
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
@@ -224,7 +224,7 @@ slave:
     - ReadWriteOnce
     ## Persistent Volume size
     ##
-    size: 8Gi
+    size: 2Gi
     ##
 
   ## Configure MySQL slave with a custom my.cnf file
