@@ -81,10 +81,6 @@ spec:
       - name: "mariadb"
         image: {{ template "mariadb.image" . }}
         imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
-    {{- if .Values.nodeSelector }}
-      nodeSelector:
-{{ toYaml .Values.nodeSelector | indent 8 }}
-      {{- end -}}  
         env:
         - name: MARIADB_ROOT_PASSWORD
           valueFrom:
@@ -223,3 +219,7 @@ spec:
         - name: "data"
           emptyDir: {}
 {{- end }}
+    {{- if .Values.nodeSelector }}
+      nodeSelector:
+{{ toYaml .Values.nodeSelector | indent 8 }}
+      {{- end -}} 
